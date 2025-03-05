@@ -1,12 +1,14 @@
 from tkinter import *
-
+from tkinter.ttk import *
 class Window(Tk):
     """Class responsible for the application window"""
-    def __init__(self, size="1920x1080"):
+    def __init__(self, title):
         """Initialization"""
         super().__init__()
-        self.title("Chameleon")
-        self.geometry(size)
+        self.title(title)
+        x = self.winfo_screenwidth()
+        y = self.winfo_screenheight()
+        self.geometry('{}x{}'.format(x, y))
         self.resizable(True, True)
         self.minsize(200, 150)
         self.maxsize(1920, 1080)
@@ -14,4 +16,4 @@ class Window(Tk):
     def finish(self):
         """Closing"""
         self.destroy()
-        print("Closing Chameleon")
+        print("Closing Chameleon...")
