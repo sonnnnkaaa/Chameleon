@@ -25,9 +25,7 @@ Chameleon - это десктопное приложение, разработа
 
 ## Предварительный макет интерфейса
 
-![Макет приложения](https://i.imgur.com/your_image_url.png)
-
-*Замените `https://i.imgur.com/your_image_url.png` на фактическую ссылку на изображение макета приложения.*
+![Макет приложения][(https://i.imgur.com/your_image_url.png)](https://github.com/sonnnnkaaa/Chameleon/blob/master/MacBook%20Pro%2014_%20-%201.png)
 
 ## Используемые технологии
 
