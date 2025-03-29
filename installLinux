@@ -1,0 +1,12 @@
+#!/bin/bash
+
+mkdir Chameleon
+cd Chameleon
+git clone https://github.com/sonnnnkaaa/Chameleon
+
+python3 -m venv venv
+source venv/bin/activate
+
+pip install -r requirements.txt
+
+python3 main.py
