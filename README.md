@@ -49,11 +49,11 @@ Chameleon - это десктопное приложение, разработа
 ## Наша Команда
 
 * **Веденина Софья** 
-  * GitHub: [https://github.com/YOUR_FIRST_GITHUB_USERNAME](https://github.com/sonnnnkaaa)
+  * GitHub: [sonnnnkaaa](https://github.com/sonnnnkaaa)
 
 * **Денисова Анастасия** 
-  * GitHub: [https://github.com/YOUR_SECOND_GITHUB_USERNAME](https://github.com/anastasik12)
+  * GitHub: [anastasik12](https://github.com/anastasik12)
 
 * **Кудряшова Анна** 
-  * GitHub: [https://github.com/YOUR_THIRD_GITHUB_USERNAME](https://github.com/YOUR_THIRD_GITHUB_USERNAME)
+  * GitHub: [SstarButterflie](https://github.com/SstarButterflie)
 
