@@ -1,8 +1,7 @@
 #!/bin/bash
 
-mkdir Chameleon
-cd Chameleon
 git clone https://github.com/sonnnnkaaa/Chameleon
+cd Chameleon
 
 python3 -m venv venv
 source venv/bin/activate
