@@ -4,8 +4,15 @@ from Window import *
 
 
 class WorkAreaWindow(Window):
+    """Класс, отвечающий за окно с рабочей областью"""
     def __init__(self, title):
         super().__init__(title)
+        self.image_btn = None
+        self.curve_btn = None
+        self.draw_btn = None
+        self.text_btn = None
+        self.tune_btn = None
+        self.effects_btn = None
         self.crop_btn = None
         self.option_add("*tearOff", FALSE)
         self.main_menu = Menu(master=self)
@@ -13,7 +20,7 @@ class WorkAreaWindow(Window):
         self.config(menu=self.main_menu)
         self.tools_buttons_creating()
     def main_menu_creating(self):
-        """Добавить обязательно команды к кнопкам и ГОРЯЧИЕ КЛАВИШИ"""
+        """Создание главного меню"""
         file_menu = Menu(master=self.main_menu)
         file_menu.add_command(label="Create new project...")
         file_menu.add_command(label="Create new canvas...")
@@ -179,13 +186,44 @@ class WorkAreaWindow(Window):
         print(dt.now().time(), "Created main menu")
     def tools_buttons_creating(self):
         Label(master=self, text="Tools:").pack()
-        self.crop_btn = Button(master=self, text="Crop")
-        self.crop_btn.bind('<ButtonPress>', self.crop_button_clicked)
+        self.crop_btn = Button(master=self, text="Crop", command=self.crop_button_clicked)
         self.crop_btn.pack()
-
-    def crop_button_clicked(self, event):
+        self.effects_btn = Button(master=self, text="Effects", command=self.effects_btn_clicked)
+        self.effects_btn.pack()
+        self.tune_btn = Button(master=self, text="Tune", command=self.tune_btn_clicked)
+        self.tune_btn.pack()
+        self.text_btn = Button(master=self, text="Text", command=self.text_btn_clicked)
+        self.text_btn.pack()
+        self.draw_btn = Button(master=self, text="Draw", command=self.draw_btn_clicked)
+        self.draw_btn.pack()
+        self.curve_btn = Button(master=self, text="Curve", command=self.curve_btn_clicked)
+        self.curve_btn.pack()
+        self.image_btn = Button(master=self, text="Image", command=self.image_btn_clicked)
+    def crop_button_clicked(self):
         self.crop_btn["state"] = "disabled"
-        if event.num == 1:
-            print(dt.now().time(), "Left mouse button press, crop button")
-
+        """actions"""
         self.crop_btn["state"] = "normal"
+    def effects_btn_clicked(self):
+        self.effects_btn["state"] = "disabled"
+        """action"""
+        self.effects_btn["state"] = "normal"
+    def tune_btn_clicked(self):
+        self.tune_btn["state"] = "disabled"
+        """action"""
+        self.tune_btn["state"] = "normal"
+    def text_btn_clicked(self):
+        self.text_btn["state"] = "disabled"
+        """action"""
+        self.text_btn["state"] = "normal"
+    def draw_btn_clicked(self):
+        self.draw_btn["state"] = "disabled"
+        """action"""
+        self.draw_btn["state"] = "normal"
+    def curve_btn_clicked(self):
+        self.curve_btn["state"] = "disabled"
+        """action"""
+        self.curve_btn["state"] = "normal"
+    def image_btn_clicked(self):
+        self.image_btn["state"] = "disabled"
+        """action"""
+        self.image_btn["state"] = "normal"

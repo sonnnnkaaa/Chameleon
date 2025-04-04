@@ -2,6 +2,7 @@ from tkinter.filedialog import *
 from datetime import datetime as dt
 
 def select_directory():
+    """Функция, отвечающая за выбор директории"""
     print(dt.now().time(), "Directory selecting window is opened")
     dir_name = askdirectory(title="Select a directory", initialdir="/", mustexist=False)
     if dir_name == () or dir_name == "":

@@ -1,2 +1,5 @@
 pillow==11.1.0
+pip==22.0.2
+setuptools==59.6.0
 tk==0.1.0
+
