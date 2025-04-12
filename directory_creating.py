@@ -13,6 +13,8 @@ def create_directory(new_dir_name):
         return
     print(dt.now().time(), "Directory creating window is opened")
     parent_dir = select_directory()
+    if not parent_dir:
+        return
     if not os.access(parent_dir, os.W_OK):
         print(dt.now().time(), f"No write permissions for", parent_dir)
     try:

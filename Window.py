@@ -1,6 +1,6 @@
 from tkinter import *
-from tkinter.ttk import *
 from datetime import datetime as dt
+
 class Window(Tk):
     name = ""
     """Class responsible for the application window"""

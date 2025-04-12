@@ -1,7 +1,5 @@
-from Window import *
-from directory_selecting import *
 from directory_creating import *
-import os
+from WorkAreaWindow import *
 
 class CreateProjectWindow(Window):
     def __init__(self):
@@ -32,4 +30,5 @@ class CreateProjectWindow(Window):
             self.go_back_btn["state"] = "normal"
     def click_goback_btn(self):
         self.finish()
+
 
